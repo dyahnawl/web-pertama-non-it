@@ -1,0 +1,196 @@
+*, html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica;
+}
+
+header {
+	background: #1A2238;
+	color: #eaeaea;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.logo {
+	display: flex;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-left: 10px;
+	cursor: pointer;
+	gap: 6px;
+	transition: all .5s ease 0s;
+}
+.logo-img {
+	width: 35px;
+	height: 35px;
+	margin-left: 10px;
+}
+.logo-title {
+	cursor: pointer
+	transition: all .5s ease 0s;
+}
+.logo:hover {
+	color: #ff6a3d;
+	transform: rotate(2deg);
+}
+
+nav ul{
+	display: flex;
+	padding: 20px;
+}
+
+.btn-cta {
+	margin-right: 10px;
+	font-size: 20px;
+	padding: 6px 12px;
+	border: none;
+	background: #ff6a3d;
+	color: #eaeaea;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+li {
+	list-style-type: none;
+	padding: 20;
+}
+li a:hover {
+	color: #ff6a3d;
+}
+
+a {
+	color: #eaeaea;
+	text-decoration: none;
+}
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 70px 0;
+	margin-top: 24px;
+	flex: 1;
+}
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px 0;
+	text-align: center;
+}
+.title {
+	font-size: 24px;
+	color: #333;
+	font-weight: bolder;
+	text-color: black;
+}
+.description {
+  color: #333;
+  font-size: 28px;
+  line-height: 1.7;
+}
+.img-foto {
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+	padding: 10px;
+}
+.parallax {
+	background-image: url('asset/foto/Nawlearn logo.png');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50vh;
+}
+.tentang {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #1A2238;
+	color: #eaeaea;
+	padding: 40px;
+	
+}
+.mt-10 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+
+}
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card-item {
+	margin: 10px;
+	width: 25%;
+	background: #f7f7f7;
+	color: #222;
+	padding: 24px;
+	gap: 8px;
+	box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.5);	
+}
+.card-title {
+	font-size: 18px;
+	font-weight: bolder;
+	
+}
+.card-description {
+	font-size: 14px;
+	margin-top: 4px;
+}
+.icon {
+	width: 75px;
+	height: 75px;
+	margin: 10px;
+	padding: 4px;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #ff6a3d;
+}
+
+@media screen and (max-width: 500px) {
+	.card {
+		flex-direction: column;
+		gap: 0;
+	}
+	.card-item {
+		width: 100%;
+	}
+	.container {
+		max-width: 100vh;
+		padding: 0;
+	}
+	.intro {
+		margin-top: 20px;
+	}
+	.img-foto {
+		padding: 0S;
+	}
+	li {
+		position: 0;
+	}
+	nav {
+		position: fixed;
+		bottom: 0;
+		width: 100%
+		background: #1a2238;
+		z-index: 9;
+	}
+	footer {
+		margin-bottom: 80px
+	}
+}
